@@ -2,10 +2,10 @@
   "name": "react-native-meta-lenguage",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js"
-},
+  "main": "index.js",
   "dependencies": {
     "react": "16.13.1",
     "react-native": "~0.63.4",
     "react-responsive": "^8.2.0"
+  }
 }
