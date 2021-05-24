@@ -1,1 +1,1 @@
-module.exports = require( './lib/detection' )
+module.exports = require( './main.jsx' )
