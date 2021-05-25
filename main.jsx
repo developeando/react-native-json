@@ -136,5 +136,3 @@ export const Render = ( object ) => {
 
   return components
 }
-main.jsx
-4 KB
