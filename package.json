@@ -3,6 +3,10 @@
   "version": "0.0.2",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "pull": "git pull",
+    "push": "git add . && git commit -m '-' && git pull && git push"
+  },
   "dependencies": {
     "react": "16.13.1",
     "react-native": "~0.63.4",

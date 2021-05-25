@@ -2,25 +2,25 @@ import React from 'react'
 import { Text, View, TouchableOpacity } from 'react-native'
 import { useMediaQuery } from 'react-responsive'
 
-const Button = ( { onPress, title } ) => {
+const Button = ( { onPress, text, width, height, color } ) => {
   return (
     <TouchableOpacity 
       onPress = { onPress } 
       style = { {
-        backgroundColor: "#009688",
+        backgroundColor: color,
         borderRadius: 10,
-        height: 50,
-        width: 200,
+        height: height,
+        width: width,
         justifyContent: 'center',
       } }>
       <Text 
         style = { {
-          fontSize: 18,
+          fontSize: 30,
           color: "#fff",
           fontWeight: "bold",
           alignSelf: "center"
         } }
-        >{ title }
+        >{ text }
       </Text>
     </TouchableOpacity>
   )
@@ -123,8 +123,11 @@ export const Render = ( object ) => {
       components.push( 
         <Button 
           key = { property }
-          title = { attributes.text } 
+          text = { attributes.text } 
           onPress = { attributes.onPress }
+          width = { attributes.width }
+          height = { attributes.height }
+          color = { attributes.color }
         />
       )
     }
@@ -133,3 +136,5 @@ export const Render = ( object ) => {
 
   return components
 }
+main.jsx
+4 KB
